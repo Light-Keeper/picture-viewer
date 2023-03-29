@@ -6,3 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+asciify = "0.1.6"
+clap = { version = "4.2.0", features = ["derive"] }
+dotenv = "0.15.0"
+image = "0.23.14"
+reqwest = { verison = "0.11.16", features = ["blocking"] }
+serde_json = "1.0.95"
