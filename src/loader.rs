@@ -1,4 +1,4 @@
-use image::{DynamicImage, GenericImageView};
+use image::DynamicImage;
 use std::error::Error;
 
 fn is_remote_url(path: &str) -> bool {

@@ -2,6 +2,22 @@
 
 A simple picture viewer for the terminal.
 
+## Help
+
+```
+Usage: picture-viewer <COMMAND>
+
+Commands:
+  describe  
+  show      
+  help      Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help
+
+```
+
+
 ## Installation
 
 ```bash

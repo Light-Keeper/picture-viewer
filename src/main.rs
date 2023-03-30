@@ -27,7 +27,7 @@ fn describe(path: String) -> Result<(), Box<dyn Error>> {
 
     let client = reqwest::blocking::Client::new();
     let response = client
-        .post(&format!("{}/vision/v3.0/describe", endpoint))
+        .post(format!("{}/vision/v3.0/describe", endpoint))
         .header("Ocp-Apim-Subscription-Key", key)
         .header("Content-Type", "application/json")
         .body(format!("{{\"url\": \"{}\"}}", path))
