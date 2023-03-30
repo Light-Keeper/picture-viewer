@@ -17,6 +17,11 @@ tasks:
       - cargo clippy
       - cargo fmt --all -- --check
 
+  format:
+    cmds:
+      - echo "Formatting..."
+      - cargo fmt --all
+
   all:
     cmds:
       - task: lint

@@ -41,12 +41,22 @@ mod tests {
     #[test]
     fn test_describe() {
         let args = Args::parse_from(&["", "describe", "path/to/file"]);
-        assert_eq!(args.cmd, Command::Describe(Describe { path: "path/to/file".to_string() }));
+        assert_eq!(
+            args.cmd,
+            Command::Describe(Describe {
+                path: "path/to/file".to_string()
+            })
+        );
     }
 
     #[test]
     fn test_show() {
         let args = Args::parse_from(&["", "show", "path/to/file"]);
-        assert_eq!(args.cmd, Command::Show(Show { path: "path/to/file".to_string() }));
+        assert_eq!(
+            args.cmd,
+            Command::Show(Show {
+                path: "path/to/file".to_string()
+            })
+        );
     }
 }
