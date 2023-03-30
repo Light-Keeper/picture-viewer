@@ -5,7 +5,7 @@ A simple picture viewer for the terminal.
 ## Help
 
 ```
-Usage: picture-viewer <COMMAND>
+Usage: picture-viewer <COMMAND> <PATH|URL>
 
 Commands:
   describe  
